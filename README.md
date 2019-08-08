@@ -14,6 +14,7 @@
 	</li><br>
 	<li>If you have not done so already, download <a href = "http://mallet.cs.umass.edu/download.php"> MALLET </a> and the <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html"> Java Developer's Kit (JDK)</a>. Unzip Mallet somewhere you will find it (such as your desktop) and you will now have a directory called <kbd>mallet-2.0.8</kbd>. It's in your best interest to just rename this file <kbd>mallet</kbd>.</li><br>
 	<li>At this point, open up your terminal and navigate to the <kbd>mallet</kbd> directory (using the <code>cd</code> command).</li><br>
+	<li>Unzip the transcripts file and copy or move the folder into the <kbd>mallet</kbd> folder</li><br>
 	<li>Type in <code>./bin/mallet</code> and if a list of commands appears, you've installed mallet correctly.</li><br>
 </ul>
 

@@ -42,8 +42,8 @@ def write_to_spreadsheet(sheet, content):
 		cellCol = 1
 		cellRow += 1
 
-wb = openpyxl.Workbook()
-currSheet = initialize_spreadsheet(sheetTitle, wb)
+compDataWorkBook = openpyxl.Workbook()
+currSheet = initialize_spreadsheet(sheetTitle, compDataWorkBook)
 compContent = initialize_content(compDataPath)
 parsedContent = tokenize_content(compContent)
 write_to_spreadsheet(currSheet, parsedContent)

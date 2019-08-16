@@ -4,6 +4,7 @@
 import openpyxl, pprint, os #useful import packages
 from paths import *
 from dataFields import *
+from workBooks import *
 
 # Takes a row corresponding to a single conversation and returns a dictionary of its
 # attributes to the values written on the spreadsheet.
@@ -37,5 +38,6 @@ def write_conversation_files(xmlData):
 		resultFile.close()
 	print('Done.')
 
-landTalkData = organize_data(landTalkWorkBook['Collection1'], convDataFields)
-write_conversation_files(landTalkData)
+landTalkWorkBook = openpyxl.load_workbook(scrapedDataPath)
+data = landTalkWorkBook[collectionSheet]
+write_conversation_files(data, convDataFields)

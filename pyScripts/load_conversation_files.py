@@ -1,10 +1,10 @@
 # python3.7.3
 # Author: Erick Enriquez - eenriquez@stanford.edu
-# landtalk.py - We're gonna do some stuff with our data, not sure what that looks like yet.
+# load_conversation_files.py - Pulls data from a spreadhsheet, maps the data to the appropriate fields, and
+# writes each row of data to a single text file, where each file is saved in a common folder. 
 import openpyxl, pprint, os #useful import packages
 from paths import *
 from dataFields import *
-from workBooks import *
 
 # Takes a row corresponding to a single conversation and returns a dictionary of its
 # attributes to the values written on the spreadsheet.
@@ -16,10 +16,10 @@ def pull_conversation_data(currRow, fields):
 
 # Takes in a sheet containing information about all the conversations
 # and uses that data to create a list of conversation data.
-def organize_data(sheet, fields):
+def organize_data(sheet):
     sheetData = []
     for i in range(sheet.max_row):
-        currFile = pull_conversation_data(list(sheet.rows)[i], fields)
+        currFile = pull_conversation_data(list(sheet.rows)[i], convDataFields)
         sheetData.append(currFile)
     return sheetData
 
@@ -39,5 +39,5 @@ def write_conversation_files(xmlData):
 	print('Done.')
 
 landTalkWorkBook = openpyxl.load_workbook(scrapedDataPath)
-data = landTalkWorkBook[collectionSheet]
-write_conversation_files(data, convDataFields)
+data = organize_data(landTalkWorkBook[collectionSheet])
+write_conversation_files(data)

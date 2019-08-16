@@ -1,5 +1,7 @@
 # python 3.7.3
 # Author: Erick Enriquez
+# load_composition_files.py - Tokenizes data from a MALLET composition output file to write and save it to a 
+# new spreadsheet.
 import openpyxl
 from paths import *
 
@@ -43,11 +45,11 @@ def write_to_spreadsheet(sheet, content):
 		cellRow += 1
 
 compDataWorkBook = openpyxl.Workbook()
-currSheet = initialize_spreadsheet(sheetTitle, compDataWorkBook)
+currSheet = initialize_spreadsheet(compSheet, compDataWorkBook)
 compContent = initialize_content(compDataPath)
 parsedContent = tokenize_content(compContent)
 write_to_spreadsheet(currSheet, parsedContent)
-wb.save(compXlPath)
+compDataWorkBook.save(compXlPath)
 
 
 

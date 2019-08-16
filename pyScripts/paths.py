@@ -6,10 +6,9 @@
 #
 # RENAME TO 'variables.py'
 scrapedDataPath = '/Users/Home/desktop/mallet-files/pyScripts/scraped.xlsx'
-conversationResultPath = '/Users/Home/desktop/mallet-files/scriptOutputs/conversationResults/conversation'
-compXlPath = '/Users/Home/desktop/mallet-files/scriptOutputs/compData.xlsx'
-compDataPath = '/Users/Home/desktop/mallet-files/scriptOutputs/transcript_composition_1.txt'
+conversationResultPath = '/Users/Home/desktop/mallet-files/scriptOutput/conversationResults/conversation'
+compXlPath = '/Users/Home/desktop/mallet-files/scriptOutput/compData.xlsx'
+compDataPath = '/Users/Home/desktop/mallet-files/scriptOutput/transcript_composition_1.txt'
 compSheet = 'composition'
 collectionSheet = 'Collection1'
-firstScrapedRow = 3
 firstScrapedCol = 3

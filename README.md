@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 </head>
 <h1>Using Mallet to Model Landtalk Data</h1>
+	<h2>THESE INSTRUCTIONS WILL BE ADJUSTED AS I LEARN TO AUTOMATE MORE AND MORE OF THE PROCEDURE FOR FUTURE USERS</h2>
 <p>(These instructions are distilled and made as specific as possible for the LandTalk project, but if these instructions are unclear or overly distilled, all the information can be found <a href= "https://programminghistorian.org/en/lessons/topic-modeling-and-mallet#your-first-topic-model)">here.</a> <em>Instructions differ slightly on windows (primarily backslashes instead of forward-slashes)</em></p>
 <h2>Setting Up</h2>
 <ul>

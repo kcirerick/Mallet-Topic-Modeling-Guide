@@ -1,7 +1,7 @@
 rm -R scriptOutput
 mkdir scriptOutput
 mkdir scriptOutput/conversationResults
-ditto pyScripts/Transcripts scriptOutput/conversatinoResults
+ditto pyScripts/Transcripts scriptOutput/conversationResults
 python ./pyScripts/load_conversation_files.py
 bin/mallet import-dir --input scriptOutput/conversationResults --output scriptOutput/mytrans.mallet --keep-sequence --stoplist-file stoplists/all-stops.txt
 for i in 1

@@ -17,8 +17,9 @@
 <ul>
 <li> From the terminal, go to a directory you're comfortable working from (again, I suggest your desktop) and clone into <a href="https://github.com/kcirerick/Mallet-Topic-Modeling-Guide.git">this repo</a> which contains all the necessary scripts and data needed to produce a helpful topic model.
 </li><br>
-<li> Once cloned in, move both the <kbd>pyScripts</kbd> folder and the <kbd>stoplists</kbd> folder into your <kbd>mallet</kbd> folder either through the command line or the GUI. </li><br>
+<li> Once cloned in, move both the <kbd>pyScripts</kbd> folder and the <kbd>stoplists</kbd> folder into your <kbd>mallet-files</kbd> folder either through the command line or the GUI. </li><br>
 <li> Again, either from the command line or the GUI, go into <kbd>pyScripts</kbd> and move <kbd>mallet-script.sh</kbd> up one level into the main <kbd>mallet-files</kbd> directory. </li> <br>
+<li> If there are new transcripts available or an updated <kbd>scraped.xlsx</kbd> file available, be sure to replace the current ones with the updated ones to produce the most up-to-date results. </li>
 <li> Type <code>chmod +x mallet-script.sh</code> into the command line from the main <kbd>mallet-files</kbd> folder to make this script executable, and you should now be able to type <code>./mallet-script.sh</code> to run the script which will run the data in <kbd>pyScripts/scraped.xlsx</kbd> through some python scripts and our MALLET tool and produce some useful topic model information. </li> <br>
 <li><b>Some notes on the output files: </b><br>
 <ul>
